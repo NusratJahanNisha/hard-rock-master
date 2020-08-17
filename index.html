@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Hard Rock Solution - Song Lyric App</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar  navbar-dark my-3">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Hard Rock Solution">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="images/toggler-icon.svg" alt="">
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownId">
+                            <a class="dropdown-item" href="#">Action 1</a>
+                            <a class="dropdown-item" href="#">Action 2</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="content-area">
+            <div class="search-bar col-md-6 mx-auto">
+                <h1 class="text-center">Lyrics Search</h1>
+                <div class="search-box my-5">
+                    <input type="text" class="form-control" placeholder="Enter your artist song name" id="search-input">
+                    <button class="btn btn-success search-btn" id="search-button">Search</button>
+                </div>
+            </div>
+               <!-- === Fancy results === -->
+               <div class="search-result col-md-8 mx-auto py-4">
+                   <div id="all-search">
+
+                         <!-- single search result box--0-->
+
+                            <div class="single-result row align-items-center my-3 p-3" id="search-list">
+                                <div class="col-md-9">
+                                    <h3 class="lyrics-name" id="song-title-0"></h3>
+                                    <p class="author lead">Album by <span id="album-name-0"></span></p>
+                                    <p class="author lead">Artist Name: <span id="artist-name-0"></span></p>
+                                    <p class="author lead">Duration: <span id="time-duration-0"></span> seconds</p>
+                                </div>
+                                <div class="col-md-3 text-md-right text-center">
+                                    <button class="btn btn-success" id="lyrics-button-0">Get Lyrics</button>
+                                </div>
+                            </div>
+
+                           <!-- single search result box--1-->
+
+                           <div class="single-result row align-items-center my-3 p-3" >
+                                <div class="col-md-9">
+                                    <h3 class="lyrics-name" id="song-title-1"></h3>
+                                    <p class="author lead">Album by <span id="album-name-1"></span></p>
+                                    <p class="author lead">Artist Name: <span id="artist-name-1"></span></p>
+                                    <p class="author lead">Duration: <span id="time-duration-1"></span> seconds</p>
+                                </div>
+                                <div class="col-md-3 text-md-right text-center">
+                                    <button class="btn btn-success" id="lyrics-button-1">Get Lyrics</button>
+                                </div>
+                            </div>
+
+                            <!-- single search result box--2-->
+
+                            <div class="single-result row align-items-center my-3 p-3">
+                                <div class="col-md-9">
+                                    <h3 class="lyrics-name" id="song-title-2"></h3>
+                                    <p class="author lead">Album by <span id="album-name-2"></span></p>
+                                    <p class="author lead">Artist Name: <span id="artist-name-2"></span></p>
+                                    <p class="author lead">Duration: <span id="time-duration-2"></span> seconds</p>
+                                </div>
+                                <div class="col-md-3 text-md-right text-center">
+                                    <button class="btn btn-success" id="lyrics-button-2">Get Lyrics</button>
+                                </div>
+                            </div>
+
+                            <!-- single search result box--3-->
+
+                            <div class="single-result row align-items-center my-3 p-3">
+                                <div class="col-md-9">
+                                    <h3 class="lyrics-name" id="song-title-3"></h3>
+                                    <p class="author lead">Album by <span id="album-name-3"></span></p>
+                                    <p class="author lead">Artist Name: <span id="artist-name-3"></span></p>
+                                    <p class="author lead">Duration: <span id="time-duration-3"></span> seconds</p>
+                                </div>
+                                <div class="col-md-3 text-md-right text-center">
+                                    <button class="btn btn-success" id="lyrics-button-3">Get Lyrics</button>
+                                </div>
+                            </div>
+
+                            <!-- single search result box--4-->
+
+                            <div class="single-result row align-items-center my-3 p-3">
+                                <div class="col-md-9">
+                                    <h3 class="lyrics-name" id="song-title-4"></h3>
+                                    <p class="author lead">Album by <span id="album-name-4"></span></p>
+                                    <p class="author lead">Artist Name: <span id="artist-name-4"></span></p>
+                                    <p class="author lead">Duration: <span id="time-duration-4"></span> seconds</p>
+                                </div>
+                                <div class="col-md-3 text-md-right text-center">
+                                    <button class="btn btn-success" id="lyrics-button-4">Get Lyrics</button>
+                                </div>
+                            </div>
+
+                            <!-- single search result box--5-->
+
+                            <div class="single-result row align-items-center my-3 p-3">
+                                <div class="col-md-9">
+                                    <h3 class="lyrics-name" id="song-title-5"></h3>
+                                    <p class="author lead">Album by <span id="album-name-5"></span></p>
+                                    <p class="author lead">Artist Name: <span id="artist-name-5"></span></p>
+                                    <p class="author lead">Duration: <span id="time-duration-5"></span> seconds</p>
+                                </div>
+                                <div class="col-md-3 text-md-right text-center">
+                                    <button class="btn btn-success" id="lyrics-button-5">Get Lyrics</button>
+                                </div>
+                            </div>
+
+                            <!-- single search result box--6-->
+
+                            <div class="single-result row align-items-center my-3 p-3">
+                                <div class="col-md-9">
+                                    <h3 class="lyrics-name" id="song-title-6"></h3>
+                                    <p class="author lead">Album by <span id="album-name-6"></span></p>
+                                    <p class="author lead">Artist Name: <span id="artist-name-6"></span></p>
+                                    <p class="author lead">Duration: <span id="time-duration-6"></span> seconds</p>
+                                </div>
+                                <div class="col-md-3 text-md-right text-center">
+                                    <button class="btn btn-success" id="lyrics-button-6">Get Lyrics</button>
+                                </div>
+                            </div>
+
+                            <!-- single search result box--7-->
+
+                            <div class="single-result row align-items-center my-3 p-3">
+                                <div class="col-md-9">
+                                    <h3 class="lyrics-name" id="song-title-7"></h3>
+                                    <p class="author lead">Album by <span id="album-name-7"></span></p>
+                                    <p class="author lead">Artist Name: <span id="artist-name-7"></span></p>
+                                    <p class="author lead">Duration: <span id="time-duration-7"></span> seconds</p>
+                                </div>
+                                <div class="col-md-3 text-md-right text-center">
+                                    <button class="btn btn-success" id="lyrics-button-7">Get Lyrics</button>
+                                </div>
+                            </div>
+
+                            <!-- single search result box--8-->
+
+                            <div class="single-result row align-items-center my-3 p-3">
+                                <div class="col-md-9">
+                                    <h3 class="lyrics-name" id="song-title-8"></h3>
+                                    <p class="author lead">Album by <span id="album-name-8"></span></p>
+                                    <p class="author lead">Artist Name: <span id="artist-name-8"></span></p>
+                                    <p class="author lead">Duration: <span id="time-duration-8"></span> seconds</p>
+                                </div>
+                                <div class="col-md-3 text-md-right text-center">
+                                    <button class="btn btn-success" id="lyrics-button-8">Get Lyrics</button>
+                                </div>
+                            </div>
+
+                            <!-- single search result box--9-->
+
+                            <div class="single-result row align-items-center my-3 p-3">
+                                <div class="col-md-9">
+                                    <h3 class="lyrics-name" id="song-title-9"></h3>
+                                    <p class="author lead">Album by <span id="album-name-9"></span></p>
+                                    <p class="author lead">Artist Name: <span id="artist-name-9"></span></p>
+                                    <p class="author lead">Duration: <span id="time-duration-9"></span> seconds</p>
+                                </div>
+                                <div class="col-md-3 text-md-right text-center">
+                                    <button class="btn btn-success" id="lyrics-button-9">Get Lyrics</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div> 
+
+            <!-- Single Search Lyrics box-->
+
+            <div class="single-lyrics text-center">
+                <button class="btn go-back">&lsaquo;</button>
+                <h2 class="text-success mb-4"><span id="lyrics-title"></span>   <span id="artist"></span></h2>
+                <div id="lyrics"><pre class="lyric text-white" id="full-lyrics">
+                    
+                </pre></div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Custom Script Here -->
+
+    <script>
+        document.getElementById("search-button").addEventListener("click", searchResult);
+        function searchResult(){
+            document.getElementById("all-search").style.display = "block";
+            let songName = document.getElementById("search-input").value;
+            fetch(`https://api.lyrics.ovh/suggest/${songName}`)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                dataManage(data);
+                function dataManage(info){      
+
+                    // details of search result box --0--
+
+                    songTitle0 = data.data[0].title;
+                    albumName0 = data.data[0].album.title;
+                    artistName0 = data.data[0].artist.name;                   
+                    timeDuration0 = data.data[0].duration;
+                    document.getElementById("song-title-0").innerText = songTitle0;
+                    document.getElementById("album-name-0").innerText = albumName0;
+                    document.getElementById("artist-name-0").innerText = artistName0;
+                    document.getElementById("time-duration-0").innerText = timeDuration0;
+
+                    // details of search result box --1--
+
+                    songTitle1 = data.data[1].title;
+                    albumName1 = data.data[1].album.title;
+                    artistName1 = data.data[1].artist.name;                   
+                    timeDuration1 = data.data[1].duration;
+                    document.getElementById("song-title-1").innerText = songTitle1;
+                    document.getElementById("album-name-1").innerText = albumName1;
+                    document.getElementById("artist-name-1").innerText = artistName1;
+                    document.getElementById("time-duration-1").innerText = timeDuration1;
+
+                    // details of search result box --2--
+
+                    songTitle2 = data.data[2].title;
+                    albumName2 = data.data[2].album.title;
+                    artistName2 = data.data[2].artist.name;                   
+                    timeDuration2 = data.data[2].duration;
+                    document.getElementById("song-title-2").innerText = songTitle2;
+                    document.getElementById("album-name-2").innerText = albumName2;
+                    document.getElementById("artist-name-2").innerText = artistName2;
+                    document.getElementById("time-duration-2").innerText = timeDuration2;
+
+                    // details of search result box --3--
+
+                    songTitle3 = data.data[3].title;
+                    albumName3 = data.data[3].album.title;
+                    artistName3 = data.data[3].artist.name;                   
+                    timeDuration3 = data.data[3].duration;
+                    document.getElementById("song-title-3").innerText = songTitle3;
+                    document.getElementById("album-name-3").innerText = albumName3;
+                    document.getElementById("artist-name-3").innerText = artistName3;
+                    document.getElementById("time-duration-3").innerText = timeDuration3;
+
+                    //  details of search result box --4--
+
+                    songTitle4 = data.data[4].title;
+                    albumName4 = data.data[4].album.title;
+                    artistName4 = data.data[4].artist.name;                   
+                    timeDuration4 = data.data[4].duration;
+                    document.getElementById("song-title-4").innerText = songTitle4;
+                    document.getElementById("album-name-4").innerText = albumName4;
+                    document.getElementById("artist-name-4").innerText = artistName4;
+                    document.getElementById("time-duration-4").innerText = timeDuration4;
+
+                    //  details of search result box --5--
+
+                    songTitle5 = data.data[5].title;
+                    albumName5 = data.data[5].album.title;
+                    artistName5 = data.data[5].artist.name;                   
+                    timeDuration5 = data.data[5].duration;
+                    document.getElementById("song-title-5").innerText = songTitle5;
+                    document.getElementById("album-name-5").innerText = albumName5;
+                    document.getElementById("artist-name-5").innerText = artistName5;
+                    document.getElementById("time-duration-5").innerText = timeDuration5;
+
+                    // details of search result box --6--
+
+                    songTitle6 = data.data[6].title;
+                    albumName6 = data.data[6].album.title;
+                    artistName6 = data.data[6].artist.name;                   
+                    timeDuration6 = data.data[6].duration;
+                    document.getElementById("song-title-6").innerText = songTitle6;
+                    document.getElementById("album-name-6").innerText = albumName6;
+                    document.getElementById("artist-name-6").innerText = artistName6;
+                    document.getElementById("time-duration-6").innerText = timeDuration6;
+
+                    //  details of search result box --7--
+
+                    songTitle7 = data.data[7].title;
+                    albumName7 = data.data[7].album.title;
+                    artistName7 = data.data[7].artist.name;                   
+                    timeDuration7 = data.data[7].duration;
+                    document.getElementById("song-title-7").innerText = songTitle7;
+                    document.getElementById("album-name-7").innerText = albumName7;
+                    document.getElementById("artist-name-7").innerText = artistName7;
+                    document.getElementById("time-duration-7").innerText = timeDuration7;
+
+                    // details of search result box --8--
+
+                    songTitle8 = data.data[8].title;
+                    albumName8 = data.data[8].album.title;
+                    artistName8 = data.data[8].artist.name;                   
+                    timeDuration8 = data.data[8].duration;
+                    document.getElementById("song-title-8").innerText = songTitle8;
+                    document.getElementById("album-name-8").innerText = albumName8;
+                    document.getElementById("artist-name-8").innerText = artistName8;
+                    document.getElementById("time-duration-8").innerText = timeDuration8;
+
+                    // details of search result box --9--
+
+                    songTitle9 = data.data[9].title;
+                    albumName9 = data.data[9].album.title;
+                    artistName9 = data.data[9].artist.name;                   
+                    timeDuration9 = data.data[9].duration;
+                    document.getElementById("song-title-9").innerText = songTitle9;
+                    document.getElementById("album-name-9").innerText = albumName9;
+                    document.getElementById("artist-name-9").innerText = artistName9;
+                    document.getElementById("time-duration-9").innerText = timeDuration9;
+        }})
+        .catch(error => console.log(error));
+        }
+
+        // lyrics of search result box --0--
+
+        document.getElementById("lyrics-button-0").addEventListener("click", getLyrics0);
+        function getLyrics0(){
+            fetch(`https://api.lyrics.ovh/v1/${artistName0}/${songTitle0}`)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                document.getElementById("lyrics-title").innerText = `${songTitle0} by`;
+                document.getElementById("artist").innerText = artistName0;
+                 document.getElementById("full-lyrics").innerText = data.lyrics;
+                 setTimeout(warn);  
+                function warn(){
+                    let write = document.getElementById("lyrics").innerText;
+                    if(write.length < 20){
+                        alert("No lyrics found");
+                    }
+            }
+            })
+            .catch(error => console.log(error));
+        }
+
+        // lyrics of search result box --1--
+
+        document.getElementById("lyrics-button-1").addEventListener("click", getLyrics1);
+        function getLyrics1(){
+            fetch(`https://api.lyrics.ovh/v1/${artistName1}/${songTitle1}`)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                document.getElementById("lyrics-title").innerText = `${songTitle1} by`;
+                document.getElementById("artist").innerText = artistName1;
+                document.getElementById("full-lyrics").innerText = data.lyrics;
+                setTimeout(warn);  
+                function warn(){
+                    let write = document.getElementById("lyrics").innerText;
+                    if(write.length < 20){
+                        alert("No lyrics found");
+                    }
+            } 
+            })
+            .catch(error => console.log(error));
+        } 
+
+        // lyrics of search result box --2--
+
+        document.getElementById("lyrics-button-2").addEventListener("click", getLyrics2);
+        function getLyrics2(){
+            fetch(`https://api.lyrics.ovh/v1/${artistName2}/${songTitle2}`)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                document.getElementById("lyrics-title").innerText = `${songTitle2} by`;
+                document.getElementById("artist").innerText = artistName2;
+                document.getElementById("full-lyrics").innerText = data.lyrics;
+                setTimeout(warn);  
+                function warn(){
+                    let write = document.getElementById("lyrics").innerText;
+                    if(write.length < 20){
+                        alert("No lyrics found");
+                    }
+            }
+            })
+            .catch(error => console.log(error));
+        } 
+
+        // lyrics of search result box --3--
+
+        document.getElementById("lyrics-button-3").addEventListener("click", getLyrics3);
+        function getLyrics3(){
+            fetch(`https://api.lyrics.ovh/v1/${artistName3}/${songTitle3}`)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                document.getElementById("lyrics-title").innerText = `${songTitle3} by`;
+                document.getElementById("artist").innerText = artistName3;
+                document.getElementById("full-lyrics").innerText = data.lyrics;
+                setTimeout(warn);  
+                function warn(){
+                    let write = document.getElementById("lyrics").innerText;
+                    if(write.length < 20){
+                        alert("No lyrics found");
+                    }
+            }
+            })
+            .catch(error => console.log(error));
+        } 
+
+        // lyrics of search result box --4--
+
+        document.getElementById("lyrics-button-4").addEventListener("click", getLyrics4);
+        function getLyrics4(){
+            fetch(`https://api.lyrics.ovh/v1/${artistName4}/${songTitle4}`)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                document.getElementById("lyrics-title").innerText = `${songTitle4} by`;
+                document.getElementById("artist").innerText = artistName4;
+                document.getElementById("full-lyrics").innerText = data.lyrics;
+                setTimeout(warn);  
+                function warn(){
+                    let write = document.getElementById("lyrics").innerText;
+                    if(write.length < 20){
+                        alert("No lyrics found");
+                    }
+            }
+            })
+            .catch(error => console.log(error));
+        }      
+
+        // lyrics of search result box --5--
+
+        document.getElementById("lyrics-button-5").addEventListener("click", getLyrics5);
+        function getLyrics5(){
+            fetch(`https://api.lyrics.ovh/v1/${artistName5}/${songTitle5}`)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                document.getElementById("lyrics-title").innerText = `${songTitle5} by`;
+                document.getElementById("artist").innerText = artistName5;
+                document.getElementById("full-lyrics").innerText = data.lyrics;
+                setTimeout(warn);  
+                function warn(){
+                    let write = document.getElementById("lyrics").innerText;
+                    if(write.length < 20){
+                        alert("No lyrics found");
+                    }
+            }
+            })
+            .catch(error => console.log(error));
+        } 
+
+        // lyrics of search result box --6--
+
+        document.getElementById("lyrics-button-6").addEventListener("click", getLyrics6);
+        function getLyrics6(){
+            fetch(`https://api.lyrics.ovh/v1/${artistName6}/${songTitle6}`)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                document.getElementById("lyrics-title").innerText = `${songTitle6} by`;
+                document.getElementById("artist").innerText = artistName6;
+                document.getElementById("full-lyrics").innerText = data.lyrics;
+                setTimeout(warn);  
+                function warn(){
+                    let write = document.getElementById("lyrics").innerText;
+                    if(write.length < 20){
+                        alert("No lyrics found");
+                    }
+            }
+            })
+            .catch(error => console.log(error));
+        } 
+
+        // lyrics of search result box --7--
+
+        document.getElementById("lyrics-button-7").addEventListener("click", getLyrics7);
+        function getLyrics7(){
+            fetch(`https://api.lyrics.ovh/v1/${artistName7}/${songTitle7}`)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                document.getElementById("lyrics-title").innerText = `${songTitle7} by`;
+                document.getElementById("artist").innerText = artistName7;
+                document.getElementById("full-lyrics").innerText = data.lyrics;
+                setTimeout(warn);  
+                function warn(){
+                    let write = document.getElementById("lyrics").innerText;
+                    if(write.length < 20){
+                        alert("No lyrics found");
+                    }
+            }
+            })
+            .catch(error => console.log(error));
+        } 
+
+        // lyrics of search result box --8--
+
+        document.getElementById("lyrics-button-8").addEventListener("click", getLyrics8);
+        function getLyrics8(){
+            fetch(`https://api.lyrics.ovh/v1/${artistName8}/${songTitle8}`)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                document.getElementById("lyrics-title").innerText = `${songTitle8} by`;
+                document.getElementById("artist").innerText = artistName8;
+                document.getElementById("full-lyrics").innerText = data.lyrics;
+                setTimeout(warn);  
+                function warn(){
+                    let write = document.getElementById("lyrics").innerText;
+                    if(write.length < 20){
+                        alert("No lyrics found");
+                    }
+            }
+            })
+            .catch(error => console.log(error));         
+        } 
+
+        // lyrics of search result box --9--
+
+        document.getElementById("lyrics-button-9").addEventListener("click", getLyrics9);
+        function getLyrics9(){
+            fetch(`https://api.lyrics.ovh/v1/${artistName9}/${songTitle9}`)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                document.getElementById("lyrics-title").innerText = `${songTitle9} by`;
+                document.getElementById("artist").innerText = artistName9;
+                document.getElementById("full-lyrics").innerText = data.lyrics;
+                setTimeout(warn);  
+                function warn(){
+                    let write = document.getElementById("lyrics").innerText;
+                    if(write.length < 20){
+                        alert("No lyrics found");
+                    }
+            }
+        })
+        .catch(error => console.log(error));
+        }
+                         
+    </script>
+
+</body>
+</html>
